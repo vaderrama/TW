@@ -1,0 +1,65 @@
+a:hover{background-color: orange; transition: 0.4s; padding: 10px }
+a:link {color: lawngreen;}
+a:visited {color: green}
+a:hover{color: white;}
+li:hover{background-color: orange; transition: 0.4s; padding: 10px}
+
+header{
+margin-left: 400px;
+padding: 40px;
+margin-top: 10px;
+}
+
+ul{
+	background-color: grey;
+	padding: 12px;
+
+}
+
+li{
+	background-color: lightgrey;
+	padding-right: 100%;
+	margin-top: 5px;
+	margin-right: : 100px;
+	padding: 10px;
+}
+hr{
+	border-color: red;
+
+}
+h2{
+	background-color: khaki;
+	color: black;
+	padding: 10px;
+	font-size: 20px;
+}
+#elgrupo{
+	margin-left: 100px;
+}
+
+#componentes ul{
+	background-color: white;
+	margin-left: 200px;
+}
+#componentes ul li{
+	font-family: georgia;
+	background-color: white;
+
+}
+h3{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+h4{
+	margin-left: 100px;
+}
+h5{
+	margin-left: 100px;
+}
+table{
+	margin-left: 200px;
+	background-color: lightblue;
+}
+th{
+	background-color: lightblue;
+}

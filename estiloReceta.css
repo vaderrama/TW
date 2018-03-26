@@ -1,0 +1,108 @@
+
+a:hover{background-color: darkred; transition: 0.4s;}
+a:link {color: lawngreen;}
+a:visited {color: green;}
+
+#titulo {
+color: black; text-align: center;
+background-color: cornflowerblue;
+padding: 20px;
+padding-bottom: 40px;
+margin-bottom: -20px;
+}
+h2 {
+color: darkred; font-family: Courier, monospace;
+background-color: lightgrey;
+padding:20px;
+margin-bottom: 0px;
+}
+
+h3{
+color: white; 
+background-color: rebeccapurple;
+padding:35px;
+margin-bottom: 0px;
+margin-top: -9px;
+margin-left: -5px;
+margin-right: -5px;
+}
+#navegador{
+padding: 20px;
+background-color: lightcoral;
+margin-bottom: -16px;
+}
+#info{
+background-color: palegreen;
+
+}
+#ingredientes{
+background-color: mediumpurple;
+padding: 5px;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+}
+
+
+h4{
+color: black; 
+font-size: 30px;
+background-color: palegreen
+padding:20px;
+margin-bottom: 0px;
+margin-top: 20px;
+}
+
+h5{
+	color: black;
+	font-size: 15px;
+	background-color: tan;
+	padding:20px;
+}
+h6{
+	color: black;
+	font-size: 15px;
+	background-color: tan;
+	padding:20px;
+}
+
+
+
+#descripcion{
+background-color: palegreen;
+padding: 5px;
+}
+
+p {
+font-style: italic;
+}
+
+#marco{
+	background-color: blanchedalmond;
+	padding: 30px;
+	margin: 10px;
+}
+
+#preparacion{
+	background-color: lightblue;
+}
+iframe{
+	margin-left: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
