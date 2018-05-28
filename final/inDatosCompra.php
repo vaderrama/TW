@@ -3,20 +3,27 @@ require("conexionBD.php");
 session_start();
 
 
+function filtrado($datos){
+    $datos = trim($datos); // Elimina espacios antes y después de los datos
+    $datos = stripslashes($datos); // Elimina backslashes \
+    $datos = htmlspecialchars($datos); // Traduce caracteres especiales en entidades HTML
+    return $datos;
+}
+
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-$nombre = $_POST['nombre'];
-$apellidos = $_POST['apellidos'];
-$email = $_POST['email'];
-$telefono = $_POST['telefono'];
-$direccion = $_POST['direccion'];
-$pago = $_POST['pago'];
-$ntarjeta = $_POST['ntarjeta'];
-$mes = $_POST['mes'];
-$cvv = $_POST['cvv'];
-$precio = $_POST['precio'];
-$disco = $_POST['disco'];
+$nombre = filtrado($_POST['nombre']);
+$apellidos = filtrado($_POST['apellidos']);
+$email = filtrado($_POST['email']);
+$telefono = filtrado($_POST['telefono']);
+$direccion = filtrado($_POST['direccion']);
+$pago = filtrado($_POST['pago']);
+$ntarjeta = filtrado($_POST['ntarjeta']);
+$mes = filtrado($_POST['mes']);
+$cvv = filtrado($_POST['cvv']);
+$precio = filtrado($_POST['precio']);
+$disco = filtrado($_POST['disco']);
 $estado = "Pendiente";
 $fechamodificacion = "";
 $fechahoy = date("d/m/Y");
