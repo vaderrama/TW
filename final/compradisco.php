@@ -1,27 +1,22 @@
+<?php
+require("contenidoweb.php");
+?>
+
 <!DOCTYPE html>
 <html>
-<head>
 
-<title>Jarabe de Palo</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="estilo.css" rel="stylesheet" type="text/css" />
-</head>
+<?php
+head();
+?>
 
 <body>
 
 
 <div id="PanelTop"> 
-	<h1>JARABE DE PALO</h1>
-	
-<nav>
-  <ul> 
-	<li style="list-style:none;"><a  style="text-decoration:none" href="homepage.html" >Inicio </a></li>
-	<li style="list-style:none;"><a  style="text-decoration:none" href="biografia.html" >Biografia </a></li> 
-	<li style="list-style:none;"><a  style="text-decoration:none" href="discografia.html" >Discografia</a></li>
-  	<li style="list-style:none;"><a  style="text-decoration:none" href="comprar.html" >Tienda </a></li>
-  	<li style="list-style:none;"><a  style="text-decoration:none" href="comprar.html" >Conciertos </a></li>  
-</ul>
-</nav>
+  <?php
+zonaLogin();
+?>
+
 </div>
 
 <div id="PanelMid">
@@ -65,19 +60,19 @@
     <fieldset>
     <legend>Datos del comprador:</legend>
       <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre">
+      <input type="text" name="nombre" required>
       <label for="apellidos">Apellidos:</label>
-      <input type="text" name="apellidos">
+      <input type="text" name="apellidos" required>
       <label for="email">Correo Electronico:</label>
-       <input type="text" name="email">
+      <input type="text" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" name="email" required/>
       <label for="telefono">Telefono:</label>
-       <input type="text" name="telefono">
+       <input type="text" name="telefono" required>
       <label for="direccion">Direccion Envio:</label>
-       <input type="text" name="direccion">
+       <input type="text" name="direccion" required>
     </fieldset>
     <fieldset>
       <legend>Metodo de Pago</legend>
-       <input type="radio" name="pago" value="Contrarrembolso"> Contrarrembolso<br>
+       <input type="radio" name="pago" value="Contrarrembolso" checked> Contrarrembolso<br>
        <input type="radio" name="pago" value="Tarjeta"> Tarjeta<br>
        <fieldset>
          <label for="ntarjeta">Numero de Tarjeta:</label>
@@ -114,35 +109,9 @@
 
 	</div>
 
-
-	<div id="zonaLogin">
-
-	<form action="login.php" method="post">
-  <div class="imgcontainer">
-    <img src="login.png" width="200px" height="180px" alt="Avatar" id="avatar">
-  </div>
-
-  <div class="container">
-    <label for="name"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="user" required>
-
-    <label for="pass"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="pass" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-
-	</div>
-
+<?php
+	zonaLogin();
+?>
 
 </div>
 
@@ -155,24 +124,14 @@
 </body>
 
 <div id="pie">
-<footer>
-   
-  
-	 <a style="text-decoration:none" id="foot" href="principal.html" >Inicio </a>
-	 <a style="text-decoration:none" id="foot" href="http://www.jarabedepalo.com/"> Copyright <img src="copy.png" width="20" height="20"></a>
-  	<a style="text-decoration:none" id="foot" href="http://www.jarabedepalo.com"> Mapa del sitio </a>
 
-    <p id="web"> Web diseñada por Juan Alvarez Carrasco </p>
+<?php
 
+pie();
 
-
-
-
-
-</footer>
+?>
 
 </div>
-
 
 
 

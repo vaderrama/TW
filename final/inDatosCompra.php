@@ -1,17 +1,29 @@
 <?php
-require("conexionBD.php");
-session_start();
 
+require('conexionBD.php');
 
 function filtrado($datos){
     $datos = trim($datos); // Elimina espacios antes y después de los datos
     $datos = stripslashes($datos); // Elimina backslashes \
-    $datos = htmlspecialchars($datos); // Traduce caracteres especiales en entidades HTML
     return $datos;
 }
 
-
+    
 if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+
+     if(($_POST["pago"]) == "Tarjeta"){
+
+      if(empty($_POST["ntarjeta"])){
+          $errores[] = "No se ha indicado numero Tarjeta";
+    }
+      if(empty($_POST["mes"])){
+          $errores[] = "No se ha indicado mes de caducidad de la tarjeta";
+    }
+        if(empty($_POST["cvv"])){
+          $errores[] = "No se ha indicado cvv de la tarjeta";
+     }
+ }
 
 $nombre = filtrado($_POST['nombre']);
 $apellidos = filtrado($_POST['apellidos']);
@@ -29,9 +41,13 @@ $fechamodificacion = "";
 $fechahoy = date("d/m/Y");
 $gestor ="";
 $motivo = "";
+$ID = mt_rand(1, 999);
 
-$query1 = "INSERT INTO compras (Nombre, Apellidos, Email ,Direccion, Disco, Precio , Estado , FechaRealizacion , FechaModificacion , Gestor , Motivo)
-VALUES ('$nombre', '$apellidos', '$email','$direccion', '$disco','$precio', '$estado' , '$fechahoy' , '$fechamodificacion' , '$gestor' , '$motivo')";
+
+
+
+$query1 = "INSERT INTO compras (ID , Nombre, Apellidos, Email ,Direccion, Disco, Precio , Estado , FechaRealizacion , FechaModificacion , Gestor , Motivo)
+VALUES ('$ID','$nombre', '$apellidos', '$email','$direccion', '$disco','$precio', '$estado' , '$fechahoy' , '$fechamodificacion' , '$gestor' , '$motivo')";
 
 
 if ($conexion->query($query1) === TRUE) {
@@ -43,7 +59,7 @@ if ($conexion->query($query1) === TRUE) {
 
 }
 
-}
+}	
 
 $conexion->close();
 
