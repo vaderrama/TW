@@ -44,7 +44,7 @@ panelTop();
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $id=$_POST['entrada'];
     // HACER COOKIE CON EL ID .
-    setcookie($id);
+     setcookie("id",$id,time()+1000);
 
   $query1 = "SELECT Precio FROM Discos WHERE ID='$id'";
   $result2 = mysqli_query($conexion,$query1) or die('Consulta fallida: '.mysqli_error());
