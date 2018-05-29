@@ -120,7 +120,7 @@ function gestortools(){
    <ul> 
   <li style="list-style:none;"><a  style="text-decoration:none" href="consultarPedidos.php" >Consultar peticiones compra </a></li>
   <li style="list-style:none;"><a  style="text-decoration:none" href="biografia.html" >Consultar historico compras </a></li> 
-  <li style="list-style:none;"><a  style="text-decoration:none" href="discografia.html" >Editar precio discos</a></li>
+  <li style="list-style:none;"><a  style="text-decoration:none" href="editarPrecioDiscos.php" >Editar precio discos</a></li>
   
 </ul>
 
