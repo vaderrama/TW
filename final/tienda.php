@@ -39,13 +39,13 @@ panelTop();
 <form action="compradisco.php" method="post" >
 
   <input type="radio" name="discos" value="50Palos"> <pre>50 Palos ( 2017 ) 
- </pre><img src="disco50palos.jpeg"><br>
+ </pre><img src="images/disco50palos.jpeg"><br>
   <input type="radio" name="discos" value="Adelantando"> <pre>Adelantando ( 2007 ) 
-  </pre><img src="discoadelantando.jpeg">
-  <input type="radio" name="discos" value="Bonito "> Bonito ( 2003 )<img src="discobonito.jpeg" width="144px">
-   <input type="radio" name="discos" value="DeVueltayVuelta">De vuelta y vuelta (2001)<img src="discodevueltayvuelta.jpeg">
-  <input type="radio" name="discos" value="Depende"> Depende (1998)<img src="discodepende.jpeg">
-  <input type="radio" name="discos" value="LaFlaca "> La Flaca (1996)<img src="discolaflaca.jpeg"> 
+  </pre><img src="images/discoadelantando.jpeg">
+  <input type="radio" name="discos" value="Bonito "> Bonito ( 2003 )<img src="images/discobonito.jpeg" width="144px">
+   <input type="radio" name="discos" value="DeVueltayVuelta">De vuelta y vuelta (2001)<img src="images/discodevueltayvuelta.jpeg">
+  <input type="radio" name="discos" value="Depende"> Depende (1998)<img src="images/discodepende.jpeg">
+  <input type="radio" name="discos" value="LaFlaca "> La Flaca (1996)<img src="images/discolaflaca.jpeg"> 
 
   </fieldset>
 

@@ -63,7 +63,7 @@ panelTop();
 
 <div id="zonaTexto2">
 
-  <h2> Ultimas Noticias </h2>
+  <h2>  </h2>
 	<p> </p>
 
 </div>

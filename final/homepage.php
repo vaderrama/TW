@@ -42,7 +42,7 @@ El éxito le llegaría tras un viaje a Cuba, donde le llegó la inspiración que
 
 Tras este éxito en un primer disco Pau buscaba demostrar que el grupo no era un "One-hit wonder" (grupo de un solo éxito), y con esta idea se lanzó Depende (1998), que fue producido por Joe Dworniak (conocido en España por su trabajo con Radio Futura) en los estudios Moody de Londres durante dos meses. Este disco contó con colaboraciones como Ketama y continuó con una lírica irónica que consiguió conectar con parte del público hispano e incluso llegar al público italiano.</p>
 
-	<img src="jarabedepalogrupo.jpg" width="800px" height="400px">
+	<img src="images/jarabedepalogrupo.jpg" width="800px" height="400px">
 
 
 
