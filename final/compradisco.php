@@ -14,7 +14,7 @@ head();
 
 <div id="PanelTop"> 
   <?php
-zonaLogin();
+PanelTop();
 ?>
 
 </div>

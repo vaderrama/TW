@@ -19,6 +19,8 @@ HTML;
 
 function panelTop (){
 
+ if (empty($_SESSION['user'])){
+
 	echo <<< HTML
 
 	<h1>JARABE DE PALO</h1>
@@ -28,12 +30,32 @@ function panelTop (){
 	<li style="list-style:none;"><a  style="text-decoration:none" href="homepage.php" >Inicio </a></li>
 	<li style="list-style:none;"><a  style="text-decoration:none" href="biografia.html" >Biografia </a></li> 
 	<li style="list-style:none;"><a  style="text-decoration:none" href="discografia.html" >Discografia</a></li>
-  	<li style="list-style:none;"><a  style="text-decoration:none" href="tienda.php" >Tienda </a></li>
+   <li style="list-style:none;"><a  style="text-decoration:none" href="tienda.php" >Tienda </a></li>
   	<li style="list-style:none;"><a  style="text-decoration:none" href="comprar.html" >Conciertos </a></li>  
 </ul>
 </nav>
 
 HTML;
+}else{
+
+  echo <<< HTML
+
+  <h1>JARABE DE PALO</h1>
+  
+<nav>
+  <ul> 
+  <li style="list-style:none;"><a  style="text-decoration:none" href="homepage.php" >Inicio </a></li>
+  <li style="list-style:none;"><a  style="text-decoration:none" href="biografia.html" >Biografia </a></li> 
+  <li style="list-style:none;"><a  style="text-decoration:none" href="discografia.html" >Discografia</a></li>
+    <li style="list-style:none;"><a  style="text-decoration:none" href="comprar.html" >Conciertos </a></li>  
+</ul>
+</nav>
+
+HTML;
+
+}
+
+
 
 }
 
@@ -119,7 +141,7 @@ function gestortools(){
 
    <ul> 
   <li style="list-style:none;"><a  style="text-decoration:none" href="consultarPedidos.php" >Consultar peticiones compra </a></li>
-  <li style="list-style:none;"><a  style="text-decoration:none" href="biografia.html" >Consultar historico compras </a></li> 
+  <li style="list-style:none;"><a  style="text-decoration:none" href="historicoCompras.php" >Consultar historico compras </a></li> 
   <li style="list-style:none;"><a  style="text-decoration:none" href="editarPrecioDiscos.php" >Editar precio discos</a></li>
   
 </ul>
