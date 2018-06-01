@@ -32,6 +32,7 @@ function panelTop (){
 	<li style="list-style:none;"><a  style="text-decoration:none" href="discografia.html" >Discografia</a></li>
    <li style="list-style:none;"><a  style="text-decoration:none" href="tienda.php" >Tienda </a></li>
   	<li style="list-style:none;"><a  style="text-decoration:none" href="comprar.html" >Conciertos </a></li>  
+    <li style="list-style:none;"><a  style="text-decoration:none" href="busqueda.php" >Buscador </a></li>
 </ul>
 </nav>
 
@@ -173,6 +174,9 @@ function admintools(){
 
 HTML;
 }
+
+
+
 
 
 
